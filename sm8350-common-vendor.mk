@@ -12,6 +12,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/oneplus/sm8350-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/oneplus/sm8350-common/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
+    vendor/oneplus/sm8350-common/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
     vendor/oneplus/sm8350-common/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/oneplus/sm8350-common/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/oneplus/sm8350-common/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
@@ -21,6 +22,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/system_ext/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephonyservice.xml \
     vendor/oneplus/sm8350-common/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
     vendor/oneplus/sm8350-common/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
+    vendor/oneplus/sm8350-common/proprietary/system_ext/framework/audiosphere.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/audiosphere.jar \
+    vendor/oneplus/sm8350-common/proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.android.hotwordenrollment.common.util.jar \
+    vendor/oneplus/sm8350-common/proprietary/system_ext/framework/com.nxp.nfc.nq.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.nxp.nfc.nq.jar \
+    vendor/oneplus/sm8350-common/proprietary/system_ext/framework/com.qti.dpmframework.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.qti.dpmframework.jar \
+    vendor/oneplus/sm8350-common/proprietary/system_ext/framework/dpmapi.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/dpmapi.jar \
+    vendor/oneplus/sm8350-common/proprietary/system_ext/framework/qcrilhook.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qcrilhook.jar \
+    vendor/oneplus/sm8350-common/proprietary/system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
     vendor/oneplus/sm8350-common/proprietary/system_ext/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/oneplus/sm8350-common/proprietary/system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/oneplus/sm8350-common/proprietary/system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
@@ -169,6 +177,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/oneplus/sm8350-common/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
     vendor/oneplus/sm8350-common/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
+    vendor/oneplus/sm8350-common/proprietary/vendor/etc/OnePlus_QC_LTM_Commercial_SM8350_2021_01_19.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/OnePlus_QC_LTM_Commercial_SM8350_2021_01_19.pfm \
+    vendor/oneplus/sm8350-common/proprietary/vendor/etc/OnePlus_Widevine_2020_10_12.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/OnePlus_Widevine_2020_10_12.pfm \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
@@ -550,6 +560,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsp_default_listener.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib/libcppf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcppf.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdapparamstorage.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib/libdeccfg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdeccfg.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
@@ -614,7 +627,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvppclient.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib/libvpphcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphcp.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphvx.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib/libvppimmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvppimmotion.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpptestutils.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib/libwfdcodecv4l2_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcodecv4l2_proprietary.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib/libwfdconfigutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdconfigutils_proprietary.so \
@@ -773,6 +788,19 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxQcelp13Dec.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxWmaDec.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libPerfectlyClearCrux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPerfectlyClearCrux.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libPerfectlyClearCruxOpt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPerfectlyClearCruxOpt.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libPlatformValidatorShared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPlatformValidatorShared.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libPolarrRender.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPolarrRender.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libPreviewAlgo.dummy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPreviewAlgo.dummy.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libPreviewAlgo.edgefilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPreviewAlgo.edgefilter.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libPreviewAlgo.fad.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPreviewAlgo.fad.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libPreviewAlgo.filter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPreviewAlgo.filter.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libPreviewAlgo.nightvision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPreviewAlgo.nightvision.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libPreviewAlgo.pf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPreviewAlgo.pf.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libPreviewAlgo.prefacebeauty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPreviewAlgo.prefacebeauty.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libPreviewAlgo.starburst.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPreviewAlgo.starburst.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libPreviewAlgo.supereis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPreviewAlgo.supereis.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_vendor.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libQnnHtpAltPrepStub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtpAltPrepStub.so \
@@ -974,7 +1002,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvppclient.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libvpphcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphcp.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphvx.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libvppimmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvppimmotion.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpplibrary.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpptestutils.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwqe.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
